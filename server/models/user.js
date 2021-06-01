@@ -2,12 +2,12 @@ const { DataTypes } = require('sequelize');
 const db = require('../db'); 
 
 const User = db.define('user', {
-    userName: {
+    username: {
         type: DataTypes.STRING,
         allowNull: false,
         unique: true,
     }, 
-    passWord: {
+    password: {
         type: DataTypes.STRING,
         allowNull:false
     }
